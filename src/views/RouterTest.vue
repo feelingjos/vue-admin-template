@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import HeadCommon from '../components/header/HeadCommon';
+import HeadCommon from '../components/header/headSiteContainer';
 
 export default {
   name: 'RouterTest',

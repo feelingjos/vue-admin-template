@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import HeadCommon from '../components/header/HeadCommon';
+import HeadCommon from '../components/header/headSiteContainer';
 import { Dialog } from 'vant';
 
 export default {
