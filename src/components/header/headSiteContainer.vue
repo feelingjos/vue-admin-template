@@ -58,6 +58,54 @@
           <div class="item-icon">icon12</div>
           <div class="item-title">title12</div>
         </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon1</div>
+          <div class="item-title">title1</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon2</div>
+          <div class="item-title">title2</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon3</div>
+          <div class="item-title">title3</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon4</div>
+          <div class="item-title">title4</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon5</div>
+          <div class="item-title">title5</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon6</div>
+          <div class="item-title">title6</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon7</div>
+          <div class="item-title">title7</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon8</div>
+          <div class="item-title">title8</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon9</div>
+          <div class="item-title">title9</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon10</div>
+          <div class="item-title">title10</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon11</div>
+          <div class="item-title">title11</div>
+        </div>
+        <div class="top-level-menu-item">
+          <div class="item-icon">icon12</div>
+          <div class="item-title">title12</div>
+        </div>
       </div>
     </div>
   </div>
@@ -86,7 +134,7 @@ export default {
   .all-wrapper {
     height: 60px;
     width: 100%;
-    float:left;
+    //float:left;
     .slogan-wrapper {
       position: fixed;
       left: 0;
@@ -111,9 +159,10 @@ export default {
       position: absolute;
       left: 240px;
       top:0;
-      width: 100%;
+      //width: 100%;
       height: 60px;
       background: #76FF58;
+      overflow: auto;
       .retractable-icon{
         float: left;
         height: 60px;
@@ -123,7 +172,8 @@ export default {
         width: 50px;
       }
       .level-menu-items{
-        float: left;
+        white-space: nowrap;
+        //float: left;
         height: 60px;
         background: aliceblue;
         line-height: 60px;
@@ -131,7 +181,8 @@ export default {
         margin: 0 auto;
         padding: 0 10px;
         .top-level-menu-item{
-          float: left;
+          display: inline-block;
+          //float: left;
           background: azure;
           height: 60px;
           .item-icon{
