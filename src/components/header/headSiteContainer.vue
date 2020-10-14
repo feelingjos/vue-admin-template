@@ -10,106 +10,18 @@
         aa
       </div>
       <div class="level-menu-items">
-        <div class="auto-level-menu-item-wrapper">
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon1</div>
-            <div class="item-title">title1</div>
+        <div class="auto-level-menu-item-wrapper" >
+          <div class="top-level-menu-item" v-for="one in data" :key="one">
+            <div class="item-icon">icon{{one}}</div>
+            <div class="item-title">title{{one}}</div>
           </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon2</div>
-            <div class="item-title">title2</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon3</div>
-            <div class="item-title">title3</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon4</div>
-            <div class="item-title">title4</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon5</div>
-            <div class="item-title">title5</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon6</div>
-            <div class="item-title">title6</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon7</div>
-            <div class="item-title">title7</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon8</div>
-            <div class="item-title">title8</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon9</div>
-            <div class="item-title">title9</div>
-          </div>
-          <!--<div class="top-level-menu-item">
-            <div class="item-icon">icon10</div>
-            <div class="item-title">title10</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon11</div>
-            <div class="item-title">title11</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon12</div>
-            <div class="item-title">title12</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon13</div>
-            <div class="item-title">title13</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon14</div>
-            <div class="item-title">title14</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon15</div>
-            <div class="item-title">title15</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon16</div>
-            <div class="item-title">title16</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon17</div>
-            <div class="item-title">title17</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon18</div>
-            <div class="item-title">title18</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon19</div>
-            <div class="item-title">title19</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon20</div>
-            <div class="item-title">title20</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon21</div>
-            <div class="item-title">title21</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon22</div>
-            <div class="item-title">title22</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon23</div>
-            <div class="item-title">title23</div>
-          </div>
-          <div class="top-level-menu-item">
-            <div class="item-icon">icon24</div>
-            <div class="item-title">title24</div>
-          </div>-->
         </div>
       </div>
+      <div class="header-profile-wrapper">
+        profile
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -121,7 +33,9 @@ export default {
   },
   data() {
     return {
-      titleName: this.title
+      titleName: this.title,
+      data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
     }
   },
   methods: {
@@ -190,13 +104,17 @@ export default {
           &:hover{
             overflow-x: auto;
             overflow-y: hidden;
-            //padding-right: 240px;
           }
           //position: absolute;
           //top: 0;
           //bottom: 0;
           //right: 0;
+          overflow: hidden;
           height: 60px;
+          position: absolute;
+          right: 270px;
+          top: 0;
+          left: 60px;
           .top-level-menu-item{
             display: inline-block;
             //float: left;
@@ -211,6 +129,16 @@ export default {
             }
           }
         }
+      }
+      .header-profile-wrapper{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: cadetblue;
+        width: 270px;
+        height: 60px;
+        line-height: 60px;
       }
     }
   }
