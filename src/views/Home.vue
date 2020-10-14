@@ -17,7 +17,7 @@
   </div>
 </template>
 <script>
-import HeadCommon from '../components/header/headSiteContainer.vue';
+import HeadCommon from '../components/header/HeadSiteContainer.vue';
 
 export default {
   name: 'home',

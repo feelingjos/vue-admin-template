@@ -21,7 +21,6 @@
         profile
       </div>
     </div>
-
   </div>
 </template>
 
@@ -46,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .all-wrapper {
     height: 60px;
     width: 100%;

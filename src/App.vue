@@ -1,12 +1,13 @@
 <template>
   <div>
     <headSiteContainer :title="'首页'"/>
-    <h1>内容</h1>
+    <leftMenu />
   </div>
 </template>
 
 <script>
-import headSiteContainer from './components/header/headSiteContainer';
+import headSiteContainer from './components/header/HeadSiteContainer';
+import leftMenu from './components/leftMenu/LeftMenu';
 
 export default {
   name: 'app',
@@ -16,7 +17,8 @@ export default {
     }
   },
   components: {
-    headSiteContainer
+    headSiteContainer,
+    leftMenu
   }
 }
 </script>
