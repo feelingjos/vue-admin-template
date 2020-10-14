@@ -1,7 +1,17 @@
 <template>
     <div class="menu-left-wrapper">
         <div class="menu-left-context">
-            menu-left-context
+            <div class="menu-left-nav">
+                <div class="menu-left-itme">
+                    菜单一
+                </div>
+                <div class="menu-left-itme">
+                    菜单一
+                </div>
+                <div class="menu-left-itme">
+                    菜单一
+                </div>
+            </div>
         </div>
         <div class="main-context-wrapper">
             main-context-wrapper
@@ -32,6 +42,11 @@ export default {
            bottom: 0;
            height: 100%;
            width: 240px;
+           .menu-left-nav{
+               .menu-left-itme{
+                   background: azure;
+               }
+           }
        }
        .main-context-wrapper{
            background: #27a7ff;
