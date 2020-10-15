@@ -60,7 +60,7 @@ export default {
       width: 240px;
       height: 60px;
       z-index: 10;
-      background-color: #FFDC45;
+      //background-color: #FFDC45;
       padding: 0;
       box-sizing: border-box;
       .slogan-navbar-header{
@@ -77,7 +77,7 @@ export default {
       right: 0;
       //width: 100%;
       height: 60px;
-      background: #76FF58;
+      //background: #76FF58;
       //overflow: auto;
       .retractable-icon{
         float: left;
@@ -87,13 +87,13 @@ export default {
         margin: 0 10px;
         cursor: pointer;
         width: 50px;
-        background: blueviolet;
+        //background: blueviolet;
       }
       .level-menu-items{
         white-space: nowrap;
         //display: inline-block;
         height: 60px;
-        background: aliceblue;
+        //background: aliceblue;
         line-height: 60px;
         cursor: pointer;
         margin: 0 auto;
@@ -117,7 +117,7 @@ export default {
           .top-level-menu-item{
             display: inline-block;
             //float: left;
-            background: azure;
+            //background: azure;
             height: 60px;
             .item-icon{
               float: left;
@@ -134,7 +134,7 @@ export default {
         position: absolute;
         right: 0;
         top: 0;
-        background: cadetblue;
+        //background: cadetblue;
         width: 270px;
         height: 60px;
         line-height: 60px;

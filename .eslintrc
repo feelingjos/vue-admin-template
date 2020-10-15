@@ -14,6 +14,8 @@
     "standard"
   ],
   "rules": {
+    "no-debugger": "off",
+    "no-console": "off",
     "semi": "off", // 关闭语句后不能使用分号的规则
     "space-before-function-paren": "off", // 关闭函数函数声明在小括号前必须加空格的规则
     "no-trailing-spaces": "off", // 关闭禁用行尾空格
